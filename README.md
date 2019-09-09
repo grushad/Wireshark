@@ -1,6 +1,6 @@
 # Wireshark
 
-Some features of wireshark are implemented using the python library pyshark
+### Some features of wireshark are implemented using the python library pyshark
 
 The features implemented are:
 1. Capturing live data packets.
@@ -8,3 +8,9 @@ The features implemented are:
 3. Saving the contents in a file.
 4. Reading a ".pcap" file.
 5. Displaying the length of data packets.
+
+### Requirements
+1. Python should be installed 
+2. pyshark a python library should be installed
+```pip install pyshark
+```
