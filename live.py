@@ -8,29 +8,33 @@ for pkt in cap:
 
 def apply_filter(cap):
 	print()
-	n=int(input("1. Display layers available\n2.length of the packets\n"))
+	n=int(input("1.Display layers available in each packet\n2.length of the packets\n"))
 	print()
 	if n==1:
 		for i in range(20):
-			print("Layer available in ",i)
 			print()
+			print("Layer available in packet:",i)
 			print(cap[i].layers)
+			print()
+		print("Filter on layers")
 		m=int(input("1. ip\n2. ETH\n"))
 		if m==1:
 			for i in range(20):
-				print("Layer: ",i)
 				print()
+				print("Packet: ",i)
 				print(cap[i].ip)
+				print()
 		if m==2:
 			for i in range(20):
-				print("layer: ",i)
 				print()
+				print("Packet: ",i)
 				print(cap[i].eth)
+				print()
 		
 	if n==2:
 		for i in range(20):
 			print()
-			print("Layer:" ,i)
+			print("Packet:" ,i)
 			print(cap[i].length ,"bytes")
 			print()
 
